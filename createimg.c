@@ -8,7 +8,7 @@
 
 int main(){
   int r, g , b , i , j ;
-  char [100] rgb;
+  char rgb [100];
 
   int fd = open("image.ppm", O_WRONLY | O_CREAT | O_EXCL, 0666);
   write(fd, "P3 \n 700 700 256" , 40);
